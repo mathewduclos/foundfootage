@@ -52,6 +52,7 @@
 
   .hero { position: relative; height: 100vh; min-height: 600px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
 
+  /* HERO — uses the SHORT loop */
   .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.35; z-index: 0; }
   .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse at 40% 60%, #0d0800 0%, var(--bg) 70%); z-index: 0; }
   .hero-noise { position: absolute; inset: 0; opacity: 0.03; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); z-index: 1; }
@@ -85,6 +86,8 @@
   .tracking-line { position: absolute; top: 50%; left: 0; right: 0; height: 1px; background: linear-gradient(to right, transparent, rgba(204,0,0,0.05), transparent); z-index: 3; pointer-events: none; }
 
   .work { background: var(--bg); border-top: 0.5px solid rgba(204,0,0,0.1); position: relative; overflow: hidden; }
+
+  /* WORK SECTION BG — uses the SHORT loop too, very faint atmosphere */
   .work-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.08; z-index: 0; filter: grayscale(60%); }
   .work-video-overlay { position: absolute; inset: 0; background: var(--bg); opacity: 0.4; z-index: 1; pointer-events: none; }
   .work-header, .work-grid { position: relative; z-index: 2; }
@@ -159,8 +162,9 @@
 
 <section class="hero">
   <div class="hero-bg"></div>
+  <!-- SHORT loop -->
   <video class="hero-video" autoplay muted loop playsinline>
-    <source src="Video/found footage visualizer.mp4" type="video/mp4">
+    <source src="Video/Web Visualizer short-1.mp4" type="video/mp4">
   </video>
   <div class="hero-noise"></div>
   <div class="hero-vignette"></div>
@@ -201,8 +205,9 @@
 </section>
 
 <section class="work" id="work">
+  <!-- SHORT loop, faint atmosphere -->
   <video class="work-video" autoplay muted loop playsinline>
-    <source src="Video/found footage visualizer.mp4" type="video/mp4">
+    <source src="Video/Web Visualizer short-1.mp4" type="video/mp4">
   </video>
   <div class="work-video-overlay"></div>
 
@@ -224,8 +229,9 @@
       </div>
     </div>
     <div class="work-item work-item-2">
+      <!-- FULL version, this is its real showcase -->
       <video class="work-item-2-video" autoplay muted loop playsinline>
-        <source src="Video/found footage visualizer.mp4" type="video/mp4">
+        <source src="Video/Web Visualizer.mp4" type="video/mp4">
       </video>
       <div class="work-item-corner"></div>
       <div class="work-item-corner-br"></div>
@@ -239,8 +245,9 @@
 </section>
 
 <section class="about-strip" id="about">
+  <!-- SHORT loop, near-invisible texture -->
   <video class="about-video" autoplay muted loop playsinline>
-    <source src="Video/found footage visualizer.mp4" type="video/mp4">
+    <source src="Video/Web Visualizer short-1.mp4" type="video/mp4">
   </video>
   <div class="about-video-overlay"></div>
   <div class="about-label">// Operative</div>
@@ -250,8 +257,9 @@
 </section>
 
 <section class="contact" id="contact">
+  <!-- SHORT loop, calm close -->
   <video class="contact-video" autoplay muted loop playsinline>
-    <source src="Video/found footage visualizer.mp4" type="video/mp4">
+    <source src="Video/Web Visualizer short-1.mp4" type="video/mp4">
   </video>
   <div class="contact-video-overlay"></div>
   <h2 class="contact-headline">Start<br><span class="accent">something.</span></h2>
