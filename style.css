@@ -122,10 +122,10 @@ nav {
 .work-entry {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  min-height: 85vh;
   border-bottom: 0.5px solid rgba(204,0,0,0.06);
 }
 .work-entry-media {
+  aspect-ratio: 16/9;
   position: relative;
   overflow: hidden;
   border-right: 0.5px solid rgba(204,0,0,0.06);
@@ -138,25 +138,25 @@ nav {
   justify-content: center;
 }
 .work-entry-tag { font-family: var(--vt); font-size: 12px; letter-spacing: 0.25em; color: var(--red); opacity: 0.5; text-transform: uppercase; margin-bottom: 8px; }
-.work-entry-title { font-family: var(--display); font-weight: 300; font-size: clamp(24px, 3vw, 34px); letter-spacing: 0.06em; color: var(--white); text-transform: uppercase; margin-bottom: 20px; }
+.work-entry-title { font-family: var(--display); font-weight: 300; font-size: clamp(30px, 4vw, 44px); letter-spacing: 0.06em; color: var(--white); text-transform: uppercase; margin-bottom: 20px; }
 .work-entry-roles { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
 .work-entry-roles span {
   font-family: var(--vt);
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: rgba(212,207,200,0.6);
   border: 0.5px solid rgba(204,0,0,0.2);
-  padding: 4px 10px;
+  padding: 6px 12px;
 }
 .work-entry-line {
   font-family: var(--display);
   font-weight: 300;
-  font-size: clamp(15px, 1.6vw, 17px);
-  line-height: 1.6;
+  font-size: clamp(17px, 1.9vw, 20px);
+  line-height: 1.65;
   color: rgba(212,207,200,0.65);
   letter-spacing: 0.01em;
-  max-width: 480px;
+  max-width: 500px;
 }
 
 /* Shared corner/file-tag decorations, reused on work-entry-media */
@@ -198,8 +198,8 @@ body.no-scanlines::before {
   .vhs-top { padding: 76px 20px 20px; }
   .vhs-bottom { padding: 16px 20px 24px; }
   .page-header { padding: 100px 20px 40px; }
-  .work-entry { grid-template-columns: 1fr; min-height: auto; }
-  .work-entry-media { border-right: none; aspect-ratio: 16/9; }
+  .work-entry { grid-template-columns: 1fr; }
+  .work-entry-media { border-right: none; }
   .about-content { grid-template-columns: 1fr; padding: 40px 20px 60px; gap: 32px; }
   .contact-content { padding: 60px 20px 80px; }
   footer { padding: 14px 20px; flex-direction: column; gap: 6px; }
